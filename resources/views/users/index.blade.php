@@ -7,13 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sublime project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
-    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="main_view/styles/bootstrap4/bootstrap.min.css">
+    <link href="main_view/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main_view/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="main_view/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="main_view/plugins/OwlCarousel2-2.2.1/animate.css">
+    <link rel="stylesheet" type="text/css" href="main_view/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="main_view/styles/responsive.css">
+    <style type="text/css">
+        .home_slider_background {
+            background-image: url(main_view/images/home_slider_1.jpg);
+        }
+
+        .home_slider_background {
+            background-image: url(main_view/images/home_slider_1.jpg);
+        }
+
+        .avds_xl_background {
+            background-image: url(main_view/images/avds_xl.jpg);
+        }
+    </style>
 </head>
 <body>
 
@@ -186,7 +199,7 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+                    <div class="home_slider_background" style="background-image:url(main_view/images/home_slider_1.jpg)"></div>
                     <div class="home_slider_content_container">
                         <div class="container">
                             <div class="row">
@@ -204,7 +217,7 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+                    <div class="home_slider_background" style="background-image:url(main_view/images/home_slider_1.jpg)"></div>
                     <div class="home_slider_content_container">
                         <div class="container">
                             <div class="row">
@@ -222,7 +235,7 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+                    <div class="home_slider_background" style="background-image:url(main_view/images/home_slider_1.jpg)"></div>
                     <div class="home_slider_content_container">
                         <div class="container">
                             <div class="row">
@@ -266,10 +279,10 @@
     <div class="avds">
         <div class="avds_container d-flex flex-lg-row flex-column align-items-start justify-content-between">
             <div class="avds_small">
-                <div class="avds_background" style="background-image:url(images/avds_small.jpg)"></div>
+                <div class="avds_background" style="background-image:url(main_view/images/avds_small.jpg)"></div>
                 <div class="avds_small_inner">
                     <div class="avds_discount_container">
-                        <img src="images/discount.png" alt="">
+                        <img src="main_view/images/discount.png" alt="">
                         <div>
                             <div class="avds_discount">
                                 <div>20<span>%</span></div>
@@ -284,7 +297,7 @@
                 </div>
             </div>
             <div class="avds_large">
-                <div class="avds_background" style="background-image:url(images/avds_large.jpg)"></div>
+                <div class="avds_background" style="background-image:url(main_view/images/avds_large.jpg)"></div>
                 <div class="avds_large_container">
                     <div class="avds_large_content">
                         <div class="avds_title">Professional Cameras</div>
@@ -307,7 +320,7 @@
 
                         <!-- Product -->
                         <div class="product">
-                            <div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+                            <div class="product_image"><img src="main_view/images/product_1.jpg" alt=""></div>
                             <div class="product_extra product_new"><a href="categories.html">New</a></div>
                             <div class="product_content">
                                 <div class="product_title"><a href="product.html">Smart Phone</a></div>
@@ -317,7 +330,7 @@
 
                         <!-- Product -->
                         <div class="product">
-                            <div class="product_image"><img src="images/product_2.jpg" alt=""></div>
+                            <div class="product_image"><img src="main_view/images/product_2.jpg" alt=""></div>
                             <div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
                             <div class="product_content">
                                 <div class="product_title"><a href="product.html">Smart Phone</a></div>
@@ -395,7 +408,7 @@
             <div class="row">
                 <div class="col">
                     <div class="avds_xl_container clearfix">
-                        <div class="avds_xl_background" style="background-image:url(images/avds_xl.jpg)"></div>
+                        <div class="avds_xl_background" style="background-image:url(main_view/images/avds_xl.jpg)"></div>
                         <div class="avds_xl_content">
                             <div class="avds_title">Amazing Devices</div>
                             <div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</div>
@@ -480,7 +493,7 @@
 
     <div class="footer_overlay"></div>
     <footer class="footer">
-        <div class="footer_background" style="background-image:url(images/footer.jpg)"></div>
+        <div class="footer_background" style="background-image:url(main_view/images/footer.jpg)"></div>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -504,18 +517,18 @@
     </footer>
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
-<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-<script src="plugins/Isotope/isotope.pkgd.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="main_view/js/jquery-3.2.1.min.js"></script>
+<script src="main_view/styles/bootstrap4/popper.js"></script>
+<script src="main_view/styles/bootstrap4/bootstrap.min.js"></script>
+<script src="main_view/plugins/greensock/TweenMax.min.js"></script>
+<script src="main_view/plugins/greensock/TimelineMax.min.js"></script>
+<script src="main_view/plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="main_view/plugins/greensock/animation.gsap.min.js"></script>
+<script src="main_view/plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="main_view/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="main_view/plugins/Isotope/isotope.pkgd.min.js"></script>
+<script src="main_view/plugins/easing/easing.js"></script>
+<script src="main_view/plugins/parallax-js-master/parallax.min.js"></script>
+<script src="main_view/js/custom.js"></script>
 </body>
 </html>
