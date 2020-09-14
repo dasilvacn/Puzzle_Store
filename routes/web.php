@@ -16,6 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+#--------Admin Paneli------------------------------
 Route::get('/admin', 'AdminController@index');
+Route::get('/admins', 'AdminController@adminsView')->name('yonetimPaneli.admins');
+Route::get('/users', 'AdminController@usersView')->name('yonetimPaneli.users');
+Route::get('/category', 'AdminController@categoryView')->name('yonetimPaneli.categoryManagement');
+Route::get('/productsList', 'AdminController@productsView')->name('yonetimPaneli.productsList');
+Route::get('/orders', 'AdminController@ordersView')->name('yonetimPaneli.orders');
 
+#-------------------Main Template------------------------
 Route::get('/index','HomeController@index');
+
+Auth::routes();
+#----registerdan geldi
+Route::get('/home', 'HomeController@indexView')->name('home');

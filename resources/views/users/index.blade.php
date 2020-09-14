@@ -20,7 +20,14 @@
         }
 
         .home_slider_background {
+        }
+
+        .home_slider_background {
             background-image: url(main_view/images/home_slider_1.jpg);
+        }
+
+        .avds_xl_background {
+            background-image: url(main_view/images/avds_xl.jpg);
         }
 
         .avds_xl_background {
