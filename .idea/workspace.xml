@@ -20,6 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c32b0a-ccb0-4062-b608-65983a20c187" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_13_192337_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/adminPanel/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/admins.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/categoryManagement.blade.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/orders.blade.php" afterDir="false" />
@@ -277,7 +296,7 @@
       <workItem from="1599900113308" duration="1032000" />
       <workItem from="1599902180512" duration="649000" />
       <workItem from="1599948101545" duration="24684000" />
-      <workItem from="1600036887705" duration="9218000" />
+      <workItem from="1600036887705" duration="9559000" />
     </task>
     <servers />
   </component>
