@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 #--------Admin Paneli------------------------------
-Route::get('/admin', 'AdminController@index');
+Route::get('/home', 'AdminController@indexView');
 Route::get('/admins', 'AdminController@adminsView')->name('yonetimPaneli.admins');
 Route::get('/adminAdd','AdminController@adminAddView')->name('yonetimPaneli.adminAdd');
 Route::post('/adminAdd', 'AdminController@adminAdd');
@@ -33,4 +33,4 @@ Route::get('/index','HomeController@index');
 
 Auth::routes();
 #----registerdan geldi
-Route::get('/home', 'HomeController@indexView')->name('home');
+

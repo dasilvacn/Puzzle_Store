@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
-    public function index()
+    public function indexView()
     {
         return view('layouts.admin-master');
     }
@@ -67,4 +67,5 @@ class AdminController extends Controller
     public function register(){
         return view('yonetimPaneli.register');
     }
+
 }
