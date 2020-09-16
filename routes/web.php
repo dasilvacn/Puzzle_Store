@@ -26,6 +26,7 @@ Route::get('/users', 'AdminController@usersView')->name('yonetimPaneli.users');
 Route::get('/category', 'AdminController@categoryView')->name('yonetimPaneli.categoryManagement');
 Route::get('/productsList', 'AdminController@productsView')->name('yonetimPaneli.productsList');
 Route::get('/orders', 'AdminController@ordersView')->name('yonetimPaneli.orders');
+Route::get('adminRegister','AdminController@register')->name('yonetimPaneli.register');
 
 #-------------------Main Template------------------------
 Route::get('/index','HomeController@index');

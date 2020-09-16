@@ -64,4 +64,7 @@ class AdminController extends Controller
     {
         return view('yonetimPaneli.orders');
     }
+    public function register(){
+        return view('yonetimPaneli.register');
+    }
 }

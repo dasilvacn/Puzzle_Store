@@ -8,59 +8,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 ============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="adminPanel/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href={{asset("adminPanel/img/favicon.ico")}}>
     <!-- Google Fonts
 ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <!-- Bootstrap CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/bootstrap.min.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/bootstrap.min.css")}}>
     <!-- Bootstrap CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/font-awesome.min.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/font-awesome.min.css")}}>
     <!-- nalika Icon CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/nalika-icon.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/nalika-icon.css")}}>
     <!-- owl.carousel CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/owl.carousel.css">
-    <link rel="stylesheet" href="adminPanel/css/owl.theme.css">
-    <link rel="stylesheet" href="adminPanel/css/owl.transitions.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/owl.carousel.css")}}>
+    <link rel="stylesheet" href={{asset("adminPanel/css/owl.theme.css")}}>
+    <link rel="stylesheet" href={{asset("adminPanel/css/owl.transitions.css")}}>
     <!-- animate CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/animate.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/animate.css")}}>
     <!-- normalize CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/normalize.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/normalize.css")}}>
     <!-- meanmenu icon CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/meanmenu.min.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/meanmenu.min.css")}}>
     <!-- main CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/main.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/main.css")}}>
     <!-- morrisjs CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/morrisjs/morris.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/morrisjs/morris.css")}}>
     <!-- mCustomScrollbar CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/scrollbar/jquery.mCustomScrollbar.min.css")}}>
     <!-- metisMenu CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/metisMenu/metisMenu.min.css">
-    <link rel="stylesheet" href="adminPanel/css/metisMenu/metisMenu-vertical.css">
+    <link rel="stylesheet" href={{"adminPanel/css/metisMenu/metisMenu.min.css"}}>
+    <link rel="stylesheet" href={{asset("adminPanel/css/metisMenu/metisMenu-vertical.css")}}>
     <!-- calendar CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/calendar/fullcalendar.min.css">
-    <link rel="stylesheet" href="adminPanel/css/calendar/fullcalendar.print.min.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/calendar/fullcalendar.min.css")}}>
+    <link rel="stylesheet" href={{asset("adminPanel/css/calendar/fullcalendar.print.min.css")}}>
     <!-- style CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/style.css">
+    <link rel="stylesheet" href={{asset("adminPanel/style.css")}}>
     <!-- responsive CSS
 ============================================ -->
-    <link rel="stylesheet" href="adminPanel/css/responsive.css">
+    <link rel="stylesheet" href={{asset("adminPanel/css/responsive.css")}}>
     <!-- modernizr JS
 ============================================ -->
-    <script src="adminPanel/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src={{asset("adminPanel/js/vendor/modernizr-2.8.3.min.js")}}></script>
 </head>
 
 <body>
@@ -71,8 +71,8 @@
 <div class="left-sidebar-pro">
     <nav id="sidebar" class="">
         <div class="sidebar-header">
-            <a href="{{ url('admin') }}"><img class="main-logo" src="adminPanel/img/logo/logo.png" alt="" /></a>
-            <strong><img src="adminPanel/img/logo/logosn.png" alt="" /></strong>
+            <a href="{{ url('admin') }}"><img class="main-logo" src={{asset("adminPanel/img/logo/logo.png")}} alt="" /></a>
+            <strong><img src={{asset("adminPanel/img/logo/logosn.png")}} alt="" /></strong>
         </div>
         <div class="nalika-profile"></div>
         <div class="left-custom-menu-adp-wrap comment-scrollbar">
@@ -92,7 +92,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="has-arrow" href="adminPanel/mailbox.html" aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">Mailbox</span></a>
+                        <a class="has-arrow" href={{asset("adminPanel/mailbox.html")}} aria-expanded="false"><i class="icon nalika-mail icon-wrap"></i> <span class="mini-click-non">Mailbox</span></a>
                         <ul class="submenu-angle" aria-expanded="false">
                             <li><a title="Inbox" href="adminPanel/mailbox.html"><span class="mini-sub-pro">Inbox</span></a></li>
                             <li><a title="View Mail" href="adminPanel/mailbox-view.html"><span class="mini-sub-pro">View Mail</span></a></li>
@@ -119,7 +119,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="logo-pro">
-                    <a href="{{ url('admin') }}"><img class="main-logo" src="adminPanel/img/logo/logo.png" alt="" /></a>
+                    <a href="{{ url('admin') }}"><img class="main-logo" src={{asset("adminPanel/img/logo/logo.png")}} alt="" /></a>
                 </div>
             </div>
         </div>
@@ -161,7 +161,7 @@
                                                         <li>
                                                             <a href="#">
                                                                 <div class="message-img">
-                                                                    <img src="adminPanel/img/contact/1.jpg" alt="">
+                                                                    <img src={{asset("adminPanel/img/contact/1.jpg")}} alt="">
                                                                 </div>
                                                                 <div class="message-content">
                                                                     <span class="message-date">16 Sept</span>
@@ -173,7 +173,7 @@
                                                         <li>
                                                             <a href="#">
                                                                 <div class="message-img">
-                                                                    <img src="adminPanel/img/contact/4.jpg" alt="">
+                                                                    <img src={{asset("adminPanel/img/contact/4.jpg")}} alt="">
                                                                 </div>
                                                                 <div class="message-content">
                                                                     <span class="message-date">16 Sept</span>
@@ -185,7 +185,7 @@
                                                         <li>
                                                             <a href="#">
                                                                 <div class="message-img">
-                                                                    <img src="adminPanel/img/contact/3.jpg" alt="">
+                                                                    <img src={{asset("adminPanel/img/contact/3.jpg")}} alt="">
                                                                 </div>
                                                                 <div class="message-content">
                                                                     <span class="message-date">16 Sept</span>
@@ -197,7 +197,7 @@
                                                         <li>
                                                             <a href="#">
                                                                 <div class="message-img">
-                                                                    <img src="adminPanel/img/contact/2.jpg" alt="">
+                                                                    <img src={{asset("adminPanel/img/contact/2.jpg")}} alt="">
                                                                 </div>
                                                                 <div class="message-content">
                                                                     <span class="message-date">16 Sept</span>
@@ -259,7 +259,6 @@
                                                     </ul>
 
 
-                                            </li>
                                             <li class="nav-item">
                                                 <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                     <i class="icon nalika-user"></i>
@@ -267,20 +266,19 @@
                                                     <i class="icon nalika-down-arrow nalika-angle-dw"></i>
                                                 </a>
                                                 <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                    <li><a href="adminPanel/register.html"><span class="icon nalika-home author-log-ic"></span> Register</a>
+                                                    <li><a href={{asset("adminPanel/register.html")}}><span class="icon nalika-home author-log-ic"></span> Register</a>
                                                     </li>
                                                     <li><a href="#"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
                                                     </li>
-                                                    <li><a href="adminPanel/lock.html"><span class="icon nalika-diamond author-log-ic"></span> Lock</a>
+                                                    <li><a href={{asset("adminPanel/lock.html")}}><span class="icon nalika-diamond author-log-ic"></span> Lock</a>
                                                     </li>
                                                     <li><a href="#"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
                                                     </li>
-                                                    <li><a href="adminPanel/login.html"><span class="icon nalika-unlocked author-log-ic"></span> Log Out</a>
+                                                    <li><a href={{asset("adminPanel/login.html")}}><span class="icon nalika-unlocked author-log-ic"></span> Log Out</a>
                                                     </li>
                                                 </ul>
                                             </li>
 
-                                    </div>
                                 </div>
                             </div>
                         </div>
