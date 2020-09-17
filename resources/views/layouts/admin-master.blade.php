@@ -1,3 +1,5 @@
+
+
 <html class="no-js" lang="en">
 
 <head>
@@ -259,25 +261,37 @@
                                                     </ul>
 
 
-                                            <li class="nav-item">
-                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                    <i class="icon nalika-user"></i>
-                                                    <span class="admin-name">Advanda Cro</span>
-                                                    <i class="icon nalika-down-arrow nalika-angle-dw"></i>
-                                                </a>
-                                                <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                    <li><a href={{asset("adminPanel/register.html")}}><span class="icon nalika-home author-log-ic"></span> Register</a>
+                                            <li class="navbar-nav ml-auto">
+                                            @guest
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                                </li>
+                                                @if (Route::has('register'))
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                                     </li>
-                                                    <li><a href="#"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
-                                                    </li>
-                                                    <li><a href={{asset("adminPanel/lock.html")}}><span class="icon nalika-diamond author-log-ic"></span> Lock</a>
-                                                    </li>
-                                                    <li><a href="#"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
-                                                    </li>
-                                                    <li><a href={{asset("adminPanel/login.html")}}><span class="icon nalika-unlocked author-log-ic"></span> Log Out</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
+                                                @endif
+                                            @else
+                                                <li class="nav-item dropdown">
+                                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                                        {{ Auth::user()->name }}
+                                                    </a>
+
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                            {{ __('Logout') }}
+                                                        </a>
+
+                                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                                            @csrf
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                            @endguest
+                                        </ul>
+                                    </li>
 
                                 </div>
                             </div>
