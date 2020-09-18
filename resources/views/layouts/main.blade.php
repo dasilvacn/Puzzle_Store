@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>EksikParça</title>
+    <title>Sublime</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sublime project">
@@ -36,7 +35,6 @@
     </style>
 </head>
 <body>
-
 <div class="super_container">
 
     <!-- Header -->
@@ -63,7 +61,7 @@
                                     <li class="hassubs">
                                         <a href="categories.html">Kategoriler</a>
                                         <ul>
-                                            <li><a href="{{route('pages.1000pieces')}}">1000 PARÇA</a></li>
+                                            <li><a href="categories.html">1000 PARÇA</a></li>
                                             <li><a href="categories.html">2000 PARÇA</a></li>
                                             <li><a href="categories.html">3000+ PARÇA</a></li>
                                             <li><a href="categories.html">0-3 YAŞ PUZZLE</a></li>
@@ -318,99 +316,9 @@
         </div>
     </div>
 
-    <!-- Products -->
-
-    <div class="products">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-
-                    <div class="product_grid">
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="main_view/images/product_1.jpg" alt=""></div>
-                            <div class="product_extra product_new"><a href="categories.html">New</a></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="main_view/images/product_2.jpg" alt=""></div>
-                            <div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_3.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_4.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_5.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_6.jpg" alt=""></div>
-                            <div class="product_extra product_hot"><a href="categories.html">Hot</a></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_7.jpg" alt=""></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                        <!-- Product -->
-                        <div class="product">
-                            <div class="product_image"><img src="images/product_8.jpg" alt=""></div>
-                            <div class="product_extra product_sale"><a href="categories.html">Hot</a></div>
-                            <div class="product_content">
-                                <div class="product_title"><a href="product.html">Smart Phone</a></div>
-                                <div class="product_price">$670</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
+    <div class="main-content">
+    @yield('content') <!-- Ana İçerik gelecek -->
     </div>
-
-    <!-- Ad -->
 
     <div class="avds_xl">
         <div class="container">
@@ -507,7 +415,7 @@
             <div class="row">
                 <div class="col">
                     <div class="footer_content d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
-                        <div class="footer_logo"><a href="#">EksikParça.</a></div>
+                        <div class="footer_logo"><a href="#">Sublime.</a></div>
                         <div class="copyright ml-auto mr-auto"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>

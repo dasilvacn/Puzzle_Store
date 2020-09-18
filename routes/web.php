@@ -31,6 +31,7 @@ Route::get('/adminRegister','AdminController@register')->name('yonetimPaneli.reg
 
 #-------------------Main Template------------------------
 Route::get('/index','HomeController@index');
+Route::get('1000pieces','HomeController@thousandPieces')->name('pages.1000pieces');
 
 Auth::routes();
 #----registerdan geldi
