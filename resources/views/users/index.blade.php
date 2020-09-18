@@ -47,32 +47,34 @@
                 <div class="row">
                     <div class="col">
                         <div class="header_content d-flex flex-row align-items-center justify-content-start">
-                            <div class="logo"><a href="#">Sublime.</a></div>
+                            <div class="logo"><a href="#">EksikParça.</a></div>
                             <nav class="main_nav">
                                 <ul>
                                     <li class="hassubs active">
-                                        <a href="index.html">Home</a>
+                                        <a href="index.html">Ana Sayfa</a>
                                         <ul>
-                                            <li><a href="categories.html">Categories</a></li>
-                                            <li><a href="product.html">Product</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Check out</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="categories.html">Kategoriler</a></li>
+                                            <li><a href="categories.html">En Çok Satanlar</a></li>
+                                            <li><a href="categories.html">Yeni Gelenler</a></li>
+                                            <li><a href="categories.html">İletişim</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="hassubs">
-                                        <a href="categories.html">Categories</a>
+                                        <a href="categories.html">Kategoriler</a>
                                         <ul>
-                                            <li><a href="categories.html">Category</a></li>
-                                            <li><a href="categories.html">Category</a></li>
-                                            <li><a href="categories.html">Category</a></li>
-                                            <li><a href="categories.html">Category</a></li>
-                                            <li><a href="categories.html">Category</a></li>
+                                            <li><a href="categories.html">1000 PARÇA</a></li>
+                                            <li><a href="categories.html">2000 PARÇA</a></li>
+                                            <li><a href="categories.html">3000+ PARÇA</a></li>
+                                            <li><a href="categories.html">0-3 YAŞ PUZZLE</a></li>
+                                            <li><a href="categories.html">3+ YAŞ PUZZLE</a></li>
+                                            <li><a href="categories.html">7+ YAŞ PUZZLE</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Offers</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">Aksesuarlar</a></li>
+                                    <li><a href="contact.html">İletişim</a></li>
+                                    <li><a href="contact.html">2.EL SATIŞ</a></li>
+
                                 </ul>
                             </nav>
                             <div class="header_extra ml-auto">

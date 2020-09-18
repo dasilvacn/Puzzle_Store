@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Admin;
+use App\Product;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -11,14 +12,18 @@ use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
+    public function adminPanel()
+    {
+        return view('auth.login');
+    }
     public function indexView()
     {
         return view('layouts.admin-master');
     }
     public function adminsView()
     {
-        $admins = Admin::where('deleted_at','=',null)->get();
-        return view('yonetimPaneli.admins',compact('admins'));
+        $users = User::where('deleted_at','=',null)->get();
+        return view('yonetimPaneli.admins',compact('users'));
     }
     public function adminAddView()
     {
@@ -43,7 +48,7 @@ class AdminController extends Controller
     public function delete($id)
     {
         // DB::table('users')->where('id','=',$id)->delete(); // Hard delete ile veriyi kalıcı siler. TAVSİYE EDİLMEZ!
-        DB::table('admins')->where('id','=',$id)->update([
+        DB::table('users')->where('id','=',$id)->update([
             'deleted_at' => Carbon::now()
         ]);
         return 'Başarıyla Silindi';
@@ -58,7 +63,8 @@ class AdminController extends Controller
     }
     public function productsView()
     {
-        return view('yonetimPaneli.productsList');
+        $products = Product::all();
+        return view('yonetimPaneli.productsList',compact('products'));
     }
     public function ordersView()
     {

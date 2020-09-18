@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 #--------Admin Paneli------------------------------
+Route::get('/admin','AdminController@adminPanel')->name('auth.login');
 Route::get('/home', 'AdminController@indexView');
 Route::get('/admins', 'AdminController@adminsView')->name('yonetimPaneli.admins');
 Route::get('/adminAdd','AdminController@adminAddView')->name('yonetimPaneli.adminAdd');
@@ -26,7 +27,7 @@ Route::get('/users', 'AdminController@usersView')->name('yonetimPaneli.users');
 Route::get('/category', 'AdminController@categoryView')->name('yonetimPaneli.categoryManagement');
 Route::get('/productsList', 'AdminController@productsView')->name('yonetimPaneli.productsList');
 Route::get('/orders', 'AdminController@ordersView')->name('yonetimPaneli.orders');
-Route::get('adminRegister','AdminController@register')->name('yonetimPaneli.register');
+Route::get('/adminRegister','AdminController@register')->name('yonetimPaneli.register');
 
 #-------------------Main Template------------------------
 Route::get('/index','HomeController@index');

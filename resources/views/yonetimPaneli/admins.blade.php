@@ -22,19 +22,19 @@
                     <table>
                         <thead>
                         <tr class="table100-head">
-                            <th class="column1">Yönetici Yetki</th>
                             <th class="column2">Yönetici Adı</th>
                             <th class="column3">İşlemler</th>
+                            @if (Route::has('register'))
                             <th> <button class="button" onClick="location.href='{{route('yonetimPaneli.adminAdd')}}'">Tıkla</button> </th>
+                            @endif
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach($admins as $admin)
+                        @foreach($users as $user)
                             <tr>
-                                <td>{{$admin->yetki}}</td>
-                                <td>{{$admin->name}}</td>
+                                <td>{{$user->name}}</td>
                                 <td class="btn btn-danger">
-                                    <a href="/sil/{{$admin->id}}">SİL</a>
+                                    <a href="/sil/{{$user->id}}">SİL</a>
                                 </td>
                             </tr>
                         @endforeach
