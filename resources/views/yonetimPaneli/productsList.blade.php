@@ -25,6 +25,7 @@
                             <th class="column2">Ürün Adı</th>
                             <th class="column3">Kategori</th>
                             <th class="column3">Fiyat</th>
+                            <th> <button class="button" onClick="location.href='{{route('yonetimPaneli.productAdd')}}'">Ürün Ekle</button> </th>
 
                         </tr>
                         </thead>

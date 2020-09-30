@@ -36,11 +36,9 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-                        <div class="row row-space">
-                            <div class="col-10">
                                 <div class="input-group">
-                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-                                    <div class="col-md-offset-5">
+                                    <label for="name" class="col-md-4 col-form-label">{{ __('Name') }}</label>
+                                    <div class="col-10">
                                         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                                         @error('name')
@@ -51,10 +49,10 @@
 
                                     </div>
                                 </div>
-                                <div class="row row-space">
-                                    <div class="col-10">
+
                                         <div class="input-group">
-                                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                            <label for="email" class="col-md-4 col-form-label">{{ __('E-Mail Address') }}</label>
+                                            <div class="col-10">
                                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                                             @error('email')
@@ -64,12 +62,10 @@
                                             @enderror
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row row-space">
-                                    <div class="col-16">
+
                                         <div class="input-group">
-                                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-                                            <div class="col-md-offset-5">
+                                            <label for="password" class="col-md-4 col-form-label">{{ __('Password') }}</label>
+                                            <div class="col-10">
                                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                                 @error('password')
@@ -79,15 +75,14 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="row row-space">
-                                            <div class="col-10">
-                                                <div class="input-group">
-                                                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
+                                                <div class="input-group">
+                                                    <label for="password-confirm" class="col-md-4 col-form-label">{{ __('Confirm Password') }}</label>
+                                                    <div class="col-10">
                                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                                 </div>
                                             </div>
-                                            <div class="p-t-5">
+                                            <div class="col-10">
                                                 <button class="btn btn-primary" type="submit">{{ __('Register') }}</button>
                                             </div>
                     </form>

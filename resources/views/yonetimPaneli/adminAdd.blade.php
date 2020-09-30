@@ -115,7 +115,7 @@
             <input type="password" class="form-control" name="password" placeholder="Password" required="required">
         </div>
         <div class="form-group">
-            <label class="form-check-label"><input type="checkbox" name="yetki" value="1" class="form-control" required="required"></label>
+            <label ><input type="checkbox" name="yetki" value="1" class="form-control" required="required"></label>
         </div>
         <div class="form-group">
             <label class="form-check-label"><input type="checkbox" name="siparisYonetim" value="1" class="form-control" required="required"></label>

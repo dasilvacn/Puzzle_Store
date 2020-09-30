@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Admin;
+use App\Helpers\UploadPaths;
 use App\Product;
 use App\User;
 use Carbon\Carbon;
@@ -73,5 +74,36 @@ class AdminController extends Controller
     public function register(){
         return view('yonetimPaneli.register');
     }
+    public function productCreateView()
+    {
+        return view('yonetimPaneli.productAdd');
+    }
+
+    public function productCreate(Request $request)
+    {
+        $name = $request->get('name');
+        $category = $request->get('category');
+        $price = $request->get('price');
+        $filePhotoUrl = $request->file('photo');
+        $user = User::find(1);
+
+        if (isset($filePhotoUrl)) {
+            $productPhotoName = uniqid('product_'). '.' . $filePhotoUrl->getClientOriginalExtension();
+            $filePhotoUrl->move(UploadPaths::getUploadPath('product_photos'), $productPhotoName);
+        }
+
+        Product::create([
+            'name' => $name,
+            'price' => $price,
+            'category' => $category,
+            'photo' => $productPhotoName,
+            'is_approve' => false,
+            'created_by' => $user->id,
+            'updated_by' => $user->id
+        ]);
+
+        return back();
+    }
+
 
 }

@@ -20,11 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c32b0a-ccb0-4062-b608-65983a20c187" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/PhotoList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/UploadPaths.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/email/register-mail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/productAdd.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/adminAdd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/adminAdd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/admins.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/admins.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/productsList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/productsList.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +171,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Helpers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel_BootCamp_Git_Hande" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -226,7 +235,14 @@
       <workItem from="1600392209018" duration="26000" />
       <workItem from="1600432969873" duration="25000" />
       <workItem from="1600434134448" duration="134000" />
-      <workItem from="1600451062865" duration="5224000" />
+      <workItem from="1600451062865" duration="9573000" />
+      <workItem from="1600796511785" duration="3267000" />
+      <workItem from="1600884549589" duration="4501000" />
+      <workItem from="1600990761763" duration="15667000" />
+      <workItem from="1601111364701" duration="6876000" />
+      <workItem from="1601393048414" duration="799000" />
+      <workItem from="1601420299395" duration="650000" />
+      <workItem from="1601486403835" duration="3720000" />
     </task>
     <servers />
   </component>
@@ -254,26 +270,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1599225233409" />
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1600121312120">
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601164232426">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1600121312120" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1600456152079">
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1601164232426" />
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1601497573562">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1600456152079" />
-    <state x="426" y="107" key="NewPhpClassDialog" timestamp="1600457705400">
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601497573562" />
+    <state x="426" y="107" key="NewPhpClassDialog" timestamp="1601071959757">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="426" y="107" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1600457705400" />
-    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1600463303407">
+    <state x="426" y="107" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1601071959757" />
+    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1601162979719">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1600463303407" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1600288092940">
+    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1601162979719" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1600472846721">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1600288092940" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1600472846721" />
     <state x="716" y="102" width="585" height="534" key="find.popup" timestamp="1598988539593">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

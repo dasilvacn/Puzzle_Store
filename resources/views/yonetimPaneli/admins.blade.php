@@ -25,7 +25,7 @@
                             <th class="column2">Yönetici Adı</th>
                             <th class="column3">İşlemler</th>
                             @if (Route::has('register'))
-                            <th> <button class="button" onClick="location.href='{{route('yonetimPaneli.adminAdd')}}'">Tıkla</button> </th>
+                            <th> <button class="button" onClick="location.href='{{route('yonetimPaneli.adminAdd')}}'">Admin Ekle</button> </th>
                             @endif
                         </tr>
                         </thead>
