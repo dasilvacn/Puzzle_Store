@@ -20,19 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75c32b0a-ccb0-4062-b608-65983a20c187" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Helpers/UploadPaths.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/email/register-mail.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/productAdd.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/main_view/images/pictures_3_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/main_view/images/puzzle.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/3000pieces.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/users/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_01_121908_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_01_121908_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminPanel/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/adminPanel/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminPanel/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/adminPanel/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main_view/styles/main_styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/main_view/styles/main_styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main_view/styles/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/main_view/styles/product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main_view/styles/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/main_view/styles/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/registerTemplate/js/global.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/adminAdd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/adminAdd.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin-master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin-master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/1000pieces.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/1000pieces.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/adminAdd.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/admins.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/admins.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/productAdd.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/productAdd.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/yonetimPaneli/productsList.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yonetimPaneli/productsList.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -171,7 +180,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel_BootCamp_Git_Hande" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/main_view/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -183,18 +192,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\public\main_view\images" />
+      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\public\uploads\uploadTable" />
       <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\app" />
       <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\resources\views\yonetimPaneli" />
       <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\public\adminPanel" />
-      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\resources\views\layouts" />
-      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\public\adminPanel\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\app\Helpers" />
+      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\public\main_view\images" />
+      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\resources\views\pages" />
+      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\app\Http\Controllers" />
       <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\public\registerTemplate" />
-      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\public\adminPanel\css" />
-      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\resources\js" />
-      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\app\Http" />
+      <recent name="C:\Users\hande\Projects_Laravel\Puzzle_Store\app\Helpers" />
     </key>
   </component>
   <component name="RunManager">
@@ -242,7 +251,17 @@
       <workItem from="1601111364701" duration="6876000" />
       <workItem from="1601393048414" duration="799000" />
       <workItem from="1601420299395" duration="650000" />
-      <workItem from="1601486403835" duration="3720000" />
+      <workItem from="1601486403835" duration="7299000" />
+      <workItem from="1601638836868" duration="4461000" />
+      <workItem from="1601812797196" duration="13551000" />
+      <workItem from="1601899304783" duration="978000" />
+      <workItem from="1601927308881" duration="591000" />
+      <workItem from="1601970652782" duration="9061000" />
+      <workItem from="1602372181773" duration="12604000" />
+      <workItem from="1602508099424" duration="2082000" />
+      <workItem from="1602519962575" duration="134000" />
+      <workItem from="1602790424850" duration="733000" />
+      <workItem from="1602878306322" duration="11851000" />
     </task>
     <servers />
   </component>
@@ -270,22 +289,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1599225233409" />
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601164232426">
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601972460217">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1601164232426" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1601497573562">
+    <state x="413" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1601972460217" />
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1602798016903">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1601497573562" />
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1602798016903" />
     <state x="426" y="107" key="NewPhpClassDialog" timestamp="1601071959757">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="426" y="107" key="NewPhpClassDialog/0.0.1366.768@0.0.1366.768" timestamp="1601071959757" />
-    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1601162979719">
+    <state x="517" y="307" key="NewPhpFileDialog" timestamp="1602490066276">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1601162979719" />
+    <state x="517" y="307" key="NewPhpFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1602490066276" />
     <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1600472846721">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

@@ -90,6 +90,7 @@
                             <li><a href="{{ url('users') }}">Üyeler</a></li>
                             <li><a href="{{ url('category') }}">Kategori Yönetimi</a></li>
                             <li><a href="{{ url('productsList') }}">Ürünler</a></li>
+                            <li><a href="{{ url('productAdd') }}">Ürün Ekle</a></li>
                             <li><a href="{{ url('orders') }}">Siparişler</a></li>
                         </ul>
                     </li>

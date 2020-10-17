@@ -24,16 +24,16 @@ Route::get('/', function () {
 Route::get('/index','HomeController@index')->name('index.main');
 Route::get('1000pieces','HomeController@thousandPieces')->name('pages.1000pieces');
 Route::get('/register-mail','HomeController@mailView');
+Route::get('/cart','HomeController@cartView')->name('cart.main');
 
 Route::group(['middleware' => 'auth'],function(){
     Route::get('/admin','AdminController@adminPanel')->name('auth.login');
     Route::get('/home', 'AdminController@indexView');
     Route::get('/admins', 'AdminController@adminsView')->name('yonetimPaneli.admins');
-    Route::get('/adminAdd','AdminController@adminAddView')->name('yonetimPaneli.adminAdd');
-    Route::post('/adminAdd', 'AdminController@adminAdd');
-    Route::get('/urun-ekle','AdminController@productCreateView')->name('product.add');
+    Route::get('/productAdd','AdminController@productCreateView')->name('product.add');
     Route::post('/urun-kaydet','AdminController@productCreate')->name('product.create');
     Route::get('/sil/{id}', 'AdminController@delete')->where(array('id' => '[0-9]+'));
+    Route::get('/silProduct/{id}', 'AdminController@deleteProduct')->where(array('id' => '[0-9]+'));
     Route::get('/users', 'AdminController@usersView')->name('yonetimPaneli.users');
     Route::get('/category', 'AdminController@categoryView')->name('yonetimPaneli.categoryManagement');
     Route::get('/productsList', 'AdminController@productsView')->name('yonetimPaneli.productsList');
@@ -41,6 +41,8 @@ Route::group(['middleware' => 'auth'],function(){
     Route::get('/adminRegister','AdminController@register')->name('yonetimPaneli.register');
 
 });
+
+
 Auth::routes();
 
 #----registerdan geldi

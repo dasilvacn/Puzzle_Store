@@ -19,14 +19,15 @@
         <div class="container-table100">
             <div class="wrap-table100">
                 <div class="table100">
+
                     <table>
                         <thead>
                         <tr class="table100-head">
                             <th class="column2">Ürün Adı</th>
                             <th class="column3">Kategori</th>
                             <th class="column3">Fiyat</th>
-                            <th> <button class="button" onClick="location.href='{{route('yonetimPaneli.productAdd')}}'">Ürün Ekle</button> </th>
-
+                            <th></th>
+                            <th></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -35,11 +36,18 @@
                                 <td>{{$product->name}}</td>
                                 <td>{{$product->category}}</td>
                                 <td>{{$product->price}}</td>
+                                <td><div class="card" style="width: 5rem;">
+                                        <img class="card-img-top" src="{{asset('/uploads/products/').'/'.$product->photo}}" alt=""></div>
+                                </td>
+                                <td class="btn4">
+                                    <a href="/sil/{{$product->id}}" style="color:white">SİL</a>
+                                </td>
                             </tr>
                         @endforeach
 
                         </tbody>
                     </table>
+
                 </div>
             </div>
         </div>

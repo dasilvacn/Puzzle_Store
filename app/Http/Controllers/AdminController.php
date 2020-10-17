@@ -10,6 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
 {
@@ -26,30 +27,18 @@ class AdminController extends Controller
         $users = User::where('deleted_at','=',null)->get();
         return view('yonetimPaneli.admins',compact('users'));
     }
-    public function adminAddView()
-    {
-        return view('yonetimPaneli.adminAdd');
-    }
-    public function adminAdd(Request $request)
-    {
-        $data = $request->all();
-        $password =$request->get('password');
-
-        //$users = User::all();
-        DB::table('admins')->insert([
-            'name' => $request->get('name'),
-            'password' => Hash::make($password),
-            'yetki' => $request->get('yetki'),
-            'siparisYonetim' => $request->get('siparisYonetim'),
-            'uyeYonetimi' => $request->get('uyeYonetimi'),
-            'urunYonetimi' => $request->get('urunYonetimi')
-        ]);
-        return view('yonetimPaneli.adminAdd');
-    }
     public function delete($id)
     {
         // DB::table('users')->where('id','=',$id)->delete(); // Hard delete ile veriyi kalıcı siler. TAVSİYE EDİLMEZ!
         DB::table('users')->where('id','=',$id)->update([
+            'deleted_at' => Carbon::now()
+        ]);
+        return 'Başarıyla Silindi';
+    }
+    public function deleteProduct($id)
+    {
+        // DB::table('users')->where('id','=',$id)->delete(); // Hard delete ile veriyi kalıcı siler. TAVSİYE EDİLMEZ!
+        DB::table('products')->where('id','=',$id)->update([
             'deleted_at' => Carbon::now()
         ]);
         return 'Başarıyla Silindi';

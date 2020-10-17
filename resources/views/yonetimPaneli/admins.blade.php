@@ -19,22 +19,20 @@
         <div class="container-table100">
             <div class="wrap-table100">
                 <div class="table100">
+                    <div>
                     <table>
                         <thead>
                         <tr class="table100-head">
                             <th class="column2">Yönetici Adı</th>
                             <th class="column3">İşlemler</th>
-                            @if (Route::has('register'))
-                            <th> <button class="button" onClick="location.href='{{route('yonetimPaneli.adminAdd')}}'">Admin Ekle</button> </th>
-                            @endif
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($users as $user)
                             <tr>
                                 <td>{{$user->name}}</td>
-                                <td class="btn btn-danger">
-                                    <a href="/sil/{{$user->id}}">SİL</a>
+                                <td class="btn4">
+                                    <a href="/sil/{{$user->id}}" style="color:white">SİL</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -44,6 +42,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!--===============================================================================================-->

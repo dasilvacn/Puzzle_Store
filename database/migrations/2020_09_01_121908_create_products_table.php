@@ -19,6 +19,8 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('photo');
             $table->string('category');
+            //$table->boolean('is_new');
+            //$table->boolean('is_bestSeller');
             $table->decimal('price', 5,2);
             $table->integer('created_by')->unsigned();
             $table->integer('updated_by')->unsigned();

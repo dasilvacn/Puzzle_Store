@@ -1,39 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>EksikParça</title>
+    <title>Cart</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Sublime project">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href={{asset("main_view/styles/bootstrap4/bootstrap.min.css")}}>
     <link href={{asset("main_view/plugins/font-awesome-4.7.0/css/font-awesome.min.css")}} rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href={{asset("main_view/plugins/OwlCarousel2-2.2.1/owl.carousel.css")}}>
-    <link rel="stylesheet" type="text/css" href={{asset("main_view/plugins/OwlCarousel2-2.2.1/owl.theme.default.css")}}>
-    <link rel="stylesheet" type="text/css" href={{asset("main_view/plugins/OwlCarousel2-2.2.1/animate.css")}}>
-    <link rel="stylesheet" type="text/css" href={{asset("main_view/styles/main_styles.css")}}>
-    <link rel="stylesheet" type="text/css" href={{asset("main_view/styles/responsive.css")}}>
-    <style type="text/css">
-        .home_slider_background {
-            background-image: url({{asset("main_view/images/home_slider_1.jpg")}});
-        }
-
-        .home_slider_background {
-        }
-
-        .home_slider_background {
-            background-image: url({{asset("main_view/images/home_slider_1.jpg")}});
-        }
-
-        .avds_xl_background {
-            background-image: url({{asset("main_view/images/avds_xl.jpg")}});
-        }
-
-        .avds_xl_background {
-            background-image: url({{asset("main_view/images/avds_xl.jpg")}});
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href={{asset("main_view/styles/cart.css")}}>
+    <link rel="stylesheet" type="text/css" href={{asset("main_view/styles/cart_responsive.css")}}>
 </head>
 <body>
 
@@ -138,14 +114,6 @@
         </div>
 
         <!-- Social -->
-        <div class="header_social">
-            <ul>
-                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
     </header>
 
     <!-- Menu -->
@@ -165,7 +133,7 @@
                         <ul class="page_menu_selection menu_mm">
                             <li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
                             <li class="page_menu_item menu_mm"><a href="product.html">Product<i class="fa fa-angle-down"></i></a></li>
-                            <li class="page_menu_item menu_mm"><a href={{route('cart.main')}}>Cart<i class="fa fa-angle-down"></i></a></li>
+                            <li class="page_menu_item menu_mm"><a href="cart.html">Cart<i class="fa fa-angle-down"></i></a></li>
                             <li class="page_menu_item menu_mm"><a href="checkout.html">Checkout<i class="fa fa-angle-down"></i></a></li>
                             <li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li>
                         </ul>
@@ -201,176 +169,129 @@
     <!-- Home -->
 
     <div class="home">
-        <div class="home_slider_container">
-
-            <!-- Home Slider -->
-            <div class="owl-carousel owl-theme home_slider">
-
-                <!-- Slider Item -->
-                <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url({{asset("main_view/images/puzzle.jpg")}})"></div>
-                    <div class="home_slider_content_container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
-                                        <div class="home_slider_title">Hemen Alışverişe Başla!</div>
-                                        <div class="home_slider_subtitle"></div>
-                                        <div class="button button_light home_button"><a href="#">Shop Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slider Item -->
-                <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url({{asset("main_view/images/puzzle.jpg")}})"></div>
-                    <div class="home_slider_content_container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
-                                        <div class="home_slider_title">Hemen Alışverişe Başla!</div>
-                                        <div class="home_slider_subtitle"></div>
-                                        <div class="button button_light home_button"><a href="#">Shop Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slider Item -->
-                <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url({{asset("main_view/images/puzzle.jpg")}})"></div>
-                    <div class="home_slider_content_container">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
-                                        <div class="home_slider_title">Hemen Alışverişe Başla!</div>
-                                        <div class="home_slider_subtitle"></div>
-                                        <div class="button button_light home_button"><a href="#">Shop Now</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Home Slider Dots -->
-
-            <div class="home_slider_dots_container">
+        <div class="home_container">
+            <div class="home_background" style="background-image:url(images/cart.jpg)"></div>
+            <div class="home_content_container">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="home_slider_dots">
-                                <ul id="home_slider_custom_dots" class="home_slider_custom_dots">
-                                    <li class="home_slider_custom_dot active">01.</li>
-                                    <li class="home_slider_custom_dot">02.</li>
-                                    <li class="home_slider_custom_dot">03.</li>
-                                </ul>
+                            <div class="home_content">
+                                <div class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="categories.html">Categories</a></li>
+                                        <li>Shopping Cart</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
+    <!-- Cart Info -->
 
-    <!-- Products -->
-
-
-
-
-
-
-
-            <div class="col">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="{{asset("uploads/products/product_5f8ab3c4a7182.jpeg")}}" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Ormandaki Huzur 1000 parça</a></h4>
-                                <p class="card-text"></p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="btn btn-danger btn-block">75.00TL</p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="{{asset("uploads/products/product_5f8ab4c2ce96d.jpeg")}}" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                                <p class="card-text"></p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="btn btn-danger btn-block">80.00TL</p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="{{asset("uploads/products/product_5f8ab4d319f5d.jpeg")}}" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                                <p class="card-text"></p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="btn btn-danger btn-block">90TL</p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <nav aria-label="...">
-                            <ul class="pagination">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
+    <div class="cart_info">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <!-- Column Titles -->
+                    <div class="cart_info_columns clearfix">
+                        <div class="cart_info_col cart_info_col_product">Product</div>
+                        <div class="cart_info_col cart_info_col_price">Price</div>
+                        <div class="cart_info_col cart_info_col_quantity">Quantity</div>
+                        <div class="cart_info_col cart_info_col_total">Total</div>
                     </div>
                 </div>
             </div>
+            <div class="row cart_items_row">
+                <div class="col">
 
+                    <!-- Cart Item -->
+                    <div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
+                        <!-- Name -->
+                        <div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
+                            <div class="cart_item_image">
+                                <div><img src="images/cart_1.jpg" alt=""></div>
+                            </div>
+                            <div class="cart_item_name_container">
+                                <div class="cart_item_name"><a href="#">Smart Phone Deluxe Edition</a></div>
+                                <div class="cart_item_edit"><a href="#">Edit Product</a></div>
+                            </div>
+                        </div>
+                        <!-- Price -->
+                        <div class="cart_item_price">$790.90</div>
+                        <!-- Quantity -->
+                        <div class="cart_item_quantity">
+                            <div class="product_quantity_container">
+                                <div class="product_quantity clearfix">
+                                    <span>Qty</span>
+                                    <input id="quantity_input" type="text" pattern="[0-9]*" value="1">
+                                    <div class="quantity_buttons">
+                                        <div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+                                        <div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Total -->
+                        <div class="cart_item_total">$790.90</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row row_cart_buttons">
+                <div class="col">
+                    <div class="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">
+                        <div class="button continue_shopping_button"><a href="#">Continue shopping</a></div>
+                        <div class="cart_buttons_right ml-lg-auto">
+                            <div class="button clear_cart_button"><a href="#">Clear cart</a></div>
+                            <div class="button update_cart_button"><a href="#">Update cart</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_extra">
+                <div class="col-lg-4">
+
+                    <!-- Delivery -->
+                    <div class="delivery">
+                        <div class="section_title">Shipping method</div>
+                        <div class="section_subtitle">Select the one you want</div>
+                        <div class="delivery_options">
+
+
+                        </div>
+                    </div>
+
+                    <!-- Coupon Code -->
+                    <div class="coupon">
+                        <div class="section_title">Coupon code</div>
+                        <div class="section_subtitle">Enter your coupon code</div>
+                        <div class="coupon_form_container">
+                            <form action="#" id="coupon_form" class="coupon_form">
+                                <input type="text" class="coupon_input" required="required">
+                                <button class="button coupon_button"><span>Apply</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 offset-lg-2">
+                    <div class="cart_total">
+                        <div class="section_title">Cart total</div>
+                        <div class="section_subtitle">Final info</div>
+                        <div class="cart_total_container">
+
+                        </div>
+                        <div class="button checkout_button"><a href="#">Proceed to checkout</a></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
-
 
     <!-- Footer -->
 
@@ -383,10 +304,8 @@
 <script src={{asset("main_view/plugins/scrollmagic/ScrollMagic.min.js")}}></script>
 <script src={{asset("main_view/plugins/greensock/animation.gsap.min.js")}}></script>
 <script src={{asset("main_view/plugins/greensock/ScrollToPlugin.min.js")}}></script>
-<script src={{asset("main_view/plugins/OwlCarousel2-2.2.1/owl.carousel.js")}}></script>
-<script src={{asset("main_view/plugins/Isotope/isotope.pkgd.min.js")}}></script>
 <script src={{asset("main_view/plugins/easing/easing.js")}}></script>
 <script src={{asset("main_view/plugins/parallax-js-master/parallax.min.js")}}></script>
-<script src={{asset("main_view/js/custom.js")}}></script>
+<script src={{asset("main_view/js/cart.js")}}></script>
 </body>
 </html>

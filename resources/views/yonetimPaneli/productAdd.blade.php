@@ -9,7 +9,7 @@
                             <strong>Ürün Ekleme </strong> Formu
                         </div>
                         <div class="card-body card-block">
-                            <form action="{{route('product.create')}}" method="post" enctype="multipart/form-data">
+                            <form action="{{route('product.create')}}" method="post" enctype="multipart/form-data" class="dark-matter">
                                 <div class="form-group">
                                     <label for="exampleName">Name</label>
                                     <input type="text" name="name" class="form-control">
@@ -22,14 +22,15 @@
                                     <label for="exampleName">Category</label>
                                     <input type="text" name="category" class="form-control">
                                 </div>
-                                @csrf
-                                <input type="file" name="photo" class="form-control">
-                                <input type="submit" class="btn btn-block btn-input au-btn--blue" value="Yükle"/>
-                            </form>
+                                <div class="form-group">
+                                    @csrf
+                                    <input type="file" name="photo" class="form-control">
+                                    <input type="submit" class="button" value="Yükle"/>
+                                </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-@endsection@endsection
+@endsection
